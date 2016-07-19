@@ -17,9 +17,14 @@
 		4926BADF1D243A3D00C659F1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4926BADE1D243A3D00C659F1 /* MapViewController.swift */; };
 		4926BAE11D243A5B00C659F1 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4926BAE01D243A5B00C659F1 /* TableViewController.swift */; };
 		4926BAE31D256D6F00C659F1 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4926BAE21D256D6F00C659F1 /* CustomCell.swift */; };
+		496E6FDA1D2AD43700A28271 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496E6FD91D2AD43700A28271 /* Model.swift */; };
+		496E6FDC1D2AD5C000A28271 /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496E6FDB1D2AD5C000A28271 /* Parameters.swift */; };
+		496E6FDE1D2B973800A28271 /* AutoStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496E6FDD1D2B973800A28271 /* AutoStation.swift */; };
+		5AC4A17102F8214A1A791432 /* Pods_StationsAutoLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A93485E9EA3AD5927820CE8 /* Pods_StationsAutoLib.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A93485E9EA3AD5927820CE8 /* Pods_StationsAutoLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StationsAutoLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4926BAC41D24261500C659F1 /* StationsAutoLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StationsAutoLib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4926BAC71D24261500C659F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4926BAC91D24261500C659F1 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -32,6 +37,11 @@
 		4926BADE1D243A3D00C659F1 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		4926BAE01D243A5B00C659F1 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		4926BAE21D256D6F00C659F1 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		496E6FD91D2AD43700A28271 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		496E6FDB1D2AD5C000A28271 /* Parameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parameters.swift; sourceTree = "<group>"; };
+		496E6FDD1D2B973800A28271 /* AutoStation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoStation.swift; sourceTree = "<group>"; };
+		8EA016CA7BDFB4A5F79188A8 /* Pods-StationsAutoLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StationsAutoLib.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StationsAutoLib/Pods-StationsAutoLib.debug.xcconfig"; sourceTree = "<group>"; };
+		F97D3CABD74E66C2BA3D22D2 /* Pods-StationsAutoLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StationsAutoLib.release.xcconfig"; path = "Pods/Target Support Files/Pods-StationsAutoLib/Pods-StationsAutoLib.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +49,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AC4A17102F8214A1A791432 /* Pods_StationsAutoLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00EB6491A0E474CAAC1D08AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A93485E9EA3AD5927820CE8 /* Pods_StationsAutoLib.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4926BABB1D24261500C659F1 = {
 			isa = PBXGroup;
 			children = (
 				4926BAC61D24261500C659F1 /* StationsAutoLib */,
 				4926BAC51D24261500C659F1 /* Products */,
+				6603B6135FF85F6603B9C2A6 /* Pods */,
+				00EB6491A0E474CAAC1D08AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,19 +85,39 @@
 		4926BAC61D24261500C659F1 /* StationsAutoLib */ = {
 			isa = PBXGroup;
 			children = (
+				4926BAE41D2AC2E800C659F1 /* Controllers */,
 				4926BAC71D24261500C659F1 /* AppDelegate.swift */,
-				4926BAC91D24261500C659F1 /* WelcomeViewController.swift */,
 				4926BACB1D24261500C659F1 /* Main.storyboard */,
 				4926BAE21D256D6F00C659F1 /* CustomCell.swift */,
-				4926BADE1D243A3D00C659F1 /* MapViewController.swift */,
-				4926BAE01D243A5B00C659F1 /* TableViewController.swift */,
-				4926BADC1D2439B800C659F1 /* InfoViewController.swift */,
 				4926BAD11D24261500C659F1 /* Assets.xcassets */,
 				4926BAD31D24261500C659F1 /* LaunchScreen.storyboard */,
 				4926BAD61D24261500C659F1 /* Info.plist */,
 				4926BACE1D24261500C659F1 /* StationsAutoLib.xcdatamodeld */,
+				496E6FD91D2AD43700A28271 /* Model.swift */,
+				496E6FDD1D2B973800A28271 /* AutoStation.swift */,
+				496E6FDB1D2AD5C000A28271 /* Parameters.swift */,
 			);
 			path = StationsAutoLib;
+			sourceTree = "<group>";
+		};
+		4926BAE41D2AC2E800C659F1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4926BAC91D24261500C659F1 /* WelcomeViewController.swift */,
+				4926BADE1D243A3D00C659F1 /* MapViewController.swift */,
+				4926BAE01D243A5B00C659F1 /* TableViewController.swift */,
+				4926BADC1D2439B800C659F1 /* InfoViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		6603B6135FF85F6603B9C2A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8EA016CA7BDFB4A5F79188A8 /* Pods-StationsAutoLib.debug.xcconfig */,
+				F97D3CABD74E66C2BA3D22D2 /* Pods-StationsAutoLib.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +127,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4926BAD91D24261500C659F1 /* Build configuration list for PBXNativeTarget "StationsAutoLib" */;
 			buildPhases = (
+				7B2FF9D2B913DFBFA938904B /* [CP] Check Pods Manifest.lock */,
 				4926BAC01D24261500C659F1 /* Sources */,
 				4926BAC11D24261500C659F1 /* Frameworks */,
 				4926BAC21D24261500C659F1 /* Resources */,
+				3F60D584C8FAA4B22ED718D1 /* [CP] Embed Pods Frameworks */,
+				E9B8C1EA76F75B63DB97223E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,18 +190,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3F60D584C8FAA4B22ED718D1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StationsAutoLib/Pods-StationsAutoLib-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B2FF9D2B913DFBFA938904B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E9B8C1EA76F75B63DB97223E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StationsAutoLib/Pods-StationsAutoLib-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4926BAC01D24261500C659F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4926BACA1D24261500C659F1 /* WelcomeViewController.swift in Sources */,
+				496E6FDE1D2B973800A28271 /* AutoStation.swift in Sources */,
 				4926BAE11D243A5B00C659F1 /* TableViewController.swift in Sources */,
 				4926BAD01D24261500C659F1 /* StationsAutoLib.xcdatamodeld in Sources */,
 				4926BADD1D2439B800C659F1 /* InfoViewController.swift in Sources */,
 				4926BADF1D243A3D00C659F1 /* MapViewController.swift in Sources */,
 				4926BAE31D256D6F00C659F1 /* CustomCell.swift in Sources */,
 				4926BAC81D24261500C659F1 /* AppDelegate.swift in Sources */,
+				496E6FDA1D2AD43700A28271 /* Model.swift in Sources */,
+				496E6FDC1D2AD5C000A28271 /* Parameters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +365,7 @@
 		};
 		4926BADA1D24261500C659F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EA016CA7BDFB4A5F79188A8 /* Pods-StationsAutoLib.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = StationsAutoLib/Info.plist;
@@ -282,6 +378,7 @@
 		};
 		4926BADB1D24261500C659F1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F97D3CABD74E66C2BA3D22D2 /* Pods-StationsAutoLib.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = StationsAutoLib/Info.plist;
@@ -311,6 +408,7 @@
 				4926BADB1D24261500C659F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

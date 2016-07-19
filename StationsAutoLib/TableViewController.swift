@@ -11,8 +11,15 @@ import UIKit
 class TableViewController: UIViewController {
     
     @IBOutlet var carsTableView : UITableView!
+    
+    var myStations =  [AutoStation]()
 
     override func viewDidLoad() {
+        loadStations(){myStations in
+            self.myStations = myStations   // récupération des données
+            self.carsTableView.reloadData() // maj de la tableview
+        }
+        
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
@@ -47,7 +54,7 @@ extension TableViewController : UITableViewDelegate, UITableViewDataSource {
 Int {
  // A modifier, retourner le nombre de ligne dans la section
     // indiquer le nb de lignes à afficher
- return 1
+ return myStations.count
  }
 
  func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -55,9 +62,9 @@ Int {
  // Ajouter la logique d'affichage du texte dans la cellule de la TableView
  // la variable indexpath.row indique la ligne selectionnée
  // on accède aux IBOutlet de la cellule avec par exemple : cell.name =
-    cell.nameLabel.text  = "bidon"
-    cell.carLabel.text = "50 C"
-    cell.placesLabel.text = "60 P"
+    cell.nameLabel.text  = myStations[indexPath.row].id_autolib
+    cell.carLabel.text = "\(myStations[indexPath.row].prisesAutolib) P"
+    cell.placesLabel.text = "distance" // mettre la distance géolocalisée
  return cell
  }
 
